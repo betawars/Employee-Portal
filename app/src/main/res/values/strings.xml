@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">
-        Employee-Portal
+        EmpCenter Mobile
     </string>
     <string name="username" translatable="false">
         username
