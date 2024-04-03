@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="@string/pref_category_webapp">
+
+        <EditTextPreference
+            android:title="@string/pref_change_current_user"
+            android:key="@string/username"
+            app:useSimpleSummaryProvider="true" />
+        <Preference
+            app:title="@string/pref_clear_preferences"
+            app:key="clear_button"
+            app:summary="This button clears the username and password"
+            />
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

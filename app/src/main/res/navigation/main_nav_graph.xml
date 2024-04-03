@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/web_app">
+    <fragment
+        android:id="@+id/web_app"
+        android:name="com.example.employeeportal.FragmentWebApp"
+        android:label="Weather details">
+        <action
+            android:id="@+id/navigate_to_settings"
+            app:destination="@id/settings" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.employeeportal.FragmentSettings"
+        android:label="@string/label_settings" />
+</navigation>
