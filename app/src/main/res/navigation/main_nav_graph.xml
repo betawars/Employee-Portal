@@ -2,10 +2,10 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/web_app">
+    app:startDestination="@id/landing_page">
     <fragment
         android:id="@+id/web_app"
-        android:name="com.example.employeeportal.FragmentWebApp"
+        android:name="com.example.employeeportal.webApp.FragmentWebApp"
         android:label="Weather details">
         <action
             android:id="@+id/navigate_to_settings"
@@ -15,6 +15,11 @@
 
     <fragment
         android:id="@+id/settings"
-        android:name="com.example.employeeportal.FragmentSettings"
+        android:name="com.example.employeeportal.settings.FragmentSettings"
         android:label="@string/label_settings" />
+
+    <fragment
+        android:id="@+id/landing_page"
+        android:name="com.example.employeeportal.landingPage.FragmentLanding"
+        android:label="@string/label_landing_page" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.employeeportal
+package com.example.employeeportal.webApp
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -13,10 +13,11 @@ import android.webkit.WebViewClient
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.preference.PreferenceManager
+import com.example.employeeportal.R
+import com.example.employeeportal.encrypter.EncryptionHelper
 
 class FragmentWebApp:Fragment(R.layout.fragment_web_activity) {
     private lateinit var webView: WebView
@@ -68,7 +69,7 @@ class FragmentWebApp:Fragment(R.layout.fragment_web_activity) {
         password.text = sharedPrefs.getString(getString(R.string.password),"")
         saveButton.setOnClickListener {
             editor.putString("username",username.text.toString())
-            editor.putString("password",EncryptionHelper.encrypt(password.text.toString()))
+            editor.putString("password", EncryptionHelper.encrypt(password.text.toString()))
             editor.apply()
             val checkUsername = sharedPrefs.getString(getString(R.string.username),"")
             val checkPassword = sharedPrefs.getString(getString(R.string.password),"")

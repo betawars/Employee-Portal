@@ -28,6 +28,10 @@
       Settings
     </string>
 
+    <string name="label_landing_page">
+      Landing Page
+    </string>
+
     <string name="username_hint_text">
         Enter your username
     </string>

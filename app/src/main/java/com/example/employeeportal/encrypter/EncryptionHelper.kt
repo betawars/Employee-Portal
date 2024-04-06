@@ -1,4 +1,4 @@
-package com.example.employeeportal
+package com.example.employeeportal.encrypter
 
 import android.util.Base64
 import javax.crypto.Cipher

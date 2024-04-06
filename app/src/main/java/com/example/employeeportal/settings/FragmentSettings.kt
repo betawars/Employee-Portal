@@ -1,4 +1,4 @@
-package com.example.employeeportal
+package com.example.employeeportal.settings
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -8,6 +8,7 @@ import androidx.fragment.app.DialogFragment
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.PreferenceManager
+import com.example.employeeportal.R
 
 class ShowConfirmationDialog : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
