@@ -45,6 +45,8 @@ android {
 }
 
 dependencies {
+    implementation ("com.google.android.material:material:1.1.0-alpha08")
+    implementation ("androidx.viewpager2:viewpager2:1.0.0")
     implementation(platform("com.google.firebase:firebase-bom:32.7.4"))
     implementation("com.google.firebase:firebase-analytics")
     implementation ("com.google.android.gms:play-services-maps:18.2.0")

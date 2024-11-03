@@ -32,6 +32,22 @@
       Landing Page
     </string>
 
+    <string name="label_operator_page">
+      Operator Page
+    </string>
+
+    <string name="label_tutorial_page">
+      Tutorial Page
+    </string>
+
+    <string name="label_tutorial_page_3">
+      Tutorial Page 3
+    </string>
+
+    <string name="label_tutorial_page_1">
+      Tutorial Page 1
+    </string>
+
     <string name="username_hint_text">
         Enter your username
     </string>

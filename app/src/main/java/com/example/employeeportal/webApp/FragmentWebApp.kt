@@ -120,7 +120,7 @@ class FragmentWebApp:Fragment(R.layout.fragment_web_activity) {
                            console.error('Button with name "abc" not found.');
                        }    
                        if (Object.values(document.getElementsByClassName('form-element form-error')).at(0).innerText === "Incorrect username or password.") {
-                           return true;
+                           return Object.values(document.getElementsByClassName('form-element form-error')).at(0).innerText;
                        }
                        
                    })();

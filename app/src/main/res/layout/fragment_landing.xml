@@ -19,6 +19,18 @@
         app:srcCompat="@drawable/ic_action_settings" />
 
 
+    <ImageView
+        android:id="@+id/information_icon_view"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/settings_image_view"
+        app:layout_constraintStart_toEndOf="@+id/title_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_info_icon" />
+
     <TextView
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
@@ -87,22 +99,73 @@
         android:id="@+id/add_work_pace_edit_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="79dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="77dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toStartOf="@+id/add_work_place_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_work_place_text_description" />
+        app:layout_constraintTop_toBottomOf="@+id/manual_populate_job_name" />
 
     <Button
         android:id="@+id/add_work_place_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Button"
+        android:text="Add+"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_work_place_text_description" />
+        app:layout_constraintTop_toBottomOf="@+id/manual_populate_job_name" />
+
+    <Button
+        android:id="@+id/submit_form_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="13dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/auto_populate_job_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="16dp"
+        android:text="Auto Populate"
+        app:layout_constraintBottom_toTopOf="@+id/add_work_pace_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_work_place_text_description"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <WebView
+        android:id="@+id/hidden_web_view_landing"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/manual_populate_job_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="128dp"
+        android:text="Manual Populate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auto_populate_job_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>
